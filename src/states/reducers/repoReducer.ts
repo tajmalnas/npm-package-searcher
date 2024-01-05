@@ -8,7 +8,7 @@ interface RepoState{
 
 }
 
-const reducer = (state:RepoState,action:RepoAction):RepoState => {
+const repoReducer = (state:RepoState,action:RepoAction):RepoState => {
     switch(action.type){
         
         case ActionType.SEARCH_REPOSITORIES:
@@ -34,4 +34,4 @@ const reducer = (state:RepoState,action:RepoAction):RepoState => {
     }
 }
 
-export default reducer;
+export default repoReducer;
