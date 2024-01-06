@@ -8,7 +8,13 @@ interface RepoState{
 
 }
 
-const repoReducer = (state:RepoState,action:RepoAction):RepoState => {
+const initialState = {
+    loading:false,
+    error:null,
+    data:[]
+}
+
+const repoReducer = (state:RepoState=initialState,action:RepoAction):RepoState => {
     switch(action.type){
         
         case ActionType.SEARCH_REPOSITORIES:
