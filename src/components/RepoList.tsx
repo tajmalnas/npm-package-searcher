@@ -22,7 +22,9 @@ const RepoList:React.FC = () => {
         </form>
         {error && <h3>{error}</h3>}
         {loading && <h3>Loading...</h3>}
-        {!error && !loading && data.map((name)=><div key={name}>{name}</div>)}
+        {!error && !loading && data.map((name)=><div key={name}
+            style = {{backgroundColor:'blue',height:'60px',width:'200px',margin:'10px',color:'white',textAlign:'center'}}        
+        >{name}</div>)}
     </div>
   )
 }
